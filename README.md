@@ -1,14 +1,19 @@
-Packages to download
-**/Imports/**
+**Unity Packages Used/Planned:**
 - TextMeshPro
 - SO Architecture
 - Low Poly Ultimate Pack
-- Modern UI Pack
 	
-These items under the imports folder are required to have to project build successfully, so please import upon cloning this repo. 
+These packages are required to have to project build successfully, so please import upon cloning this repo.
 
-Tutorials Used:
+**Tutorials Used:**
  - [Smoke](https://www.youtube.com/watch?v=jQivfs34Wb0)
  - [Ferris Wheel Gondula | Hinge Joints](https://www.youtube.com/watch?v=AcxH5F5KPTA)
 	- Added Empty to FerrisWheel Main submesh, so it moved with the main wheel during it's rotation w/ Emptied RB having being Kinematic.
-	- Connected set those empties to the hinge joint component
+	- Connected s
+
+**Software Used:**
+- [Linux Mint 20.3](https://www.linuxmint.com)
+- Visual Studio Code
+- Unity Editor 2020.3
+- [Online MD Previewer](markdownlivepreview.com)
+- [GitAhead](https://gitahead.github.io/gitahead.com/)
