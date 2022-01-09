@@ -6,13 +6,11 @@ using UnityEngine.AI;
 public class MovementController : MonoBehaviour
 {
     public NavMeshAgent navMeshAgent;
-
     public LinkedPath location;
 
     private void Awake()
     {
         //Set start position based on location game object.
-        //transform.position = location.transform.position;
         navMeshAgent.Warp(location.transform.position);
     }
 
@@ -30,7 +28,7 @@ public class MovementController : MonoBehaviour
 
     private void checkInputAndSetLocation(KeyCode keyCode, LinkedPath selectedLocation)
     {
-        if (Input.GetKeyDown(keyCode) && location != null)
+        if (Input.GetKeyDown(keyCode) && selectedLocation != null)
         {
             location = selectedLocation;
             navMeshAgent.SetDestination(location.transform.position);
