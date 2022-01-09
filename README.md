@@ -18,3 +18,4 @@ These packages are required to have to project build successfully, so please imp
 	- Added Empty to FerrisWheel Main submesh, so it moved with the main wheel during it's rotation w/ Emptied RB having being Kinematic.
 	- Connected empties to the hinge joint component.
  - NavMesh [#1](https://www.youtube.com/watch?v=atCOd4o7tG4) & [#2](https://www.youtube.com/watch?v=CHV1ymlw-P8)
+ - [Calculate Speed with coroutine](https://stackoverflow.com/questions/55042997/how-to-calculate-a-gameobjects-speed-in-unity)
