@@ -40227,6 +40227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1656894696}
+  offset: {x: 0, y: 41.7, z: 0}
 --- !u!1001 &1453124793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46066,7 +46067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 1656894698}
-  location: {fileID: 2065597421}
+  location: {fileID: 2086550228}
 --- !u!114 &1656894700
 MonoBehaviour:
   m_ObjectHideFlags: 0
