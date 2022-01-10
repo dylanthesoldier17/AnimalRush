@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move: 1
-  speed: 15
+  speed: 50
   direction: {x: 0, y: 0, z: 1}
 --- !u!54 &-5277777472418283637
 Rigidbody:
