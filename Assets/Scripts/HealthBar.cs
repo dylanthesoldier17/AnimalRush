@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-/*  */
+/* Used "How to make a Health Bar in Unity!" by Brackeys at [https://www.youtube.com/watch?v=BLfNP4Sc_iA] */
 public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public Image fill;
     public int maxValue = 100;
 
-    private void Start() 
+    private void Start()
     {
         setMaxHealth(maxValue);
     }
