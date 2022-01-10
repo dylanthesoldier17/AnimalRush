@@ -54,6 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 7773697240337221839}
   fill: {fileID: 6223485334508552971}
+  playerHealth: {fileID: 11400000, guid: 8732848bb1ad76d12ba85a03cc61f29a, type: 2}
   maxValue: 100
 --- !u!114 &7773697240337221839
 MonoBehaviour:
