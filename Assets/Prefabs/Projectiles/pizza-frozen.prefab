@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -1141648260073846688}
   m_Layer: 0
   m_Name: pizza-frozen
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
