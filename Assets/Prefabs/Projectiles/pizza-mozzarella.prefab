@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2498144370011566782}
   - component: {fileID: 2486037888412037174}
   - component: {fileID: 2464642457798915792}
-  - component: {fileID: 7242801076639459192}
   - component: {fileID: -1154467339389483055}
+  - component: {fileID: 7242801076639459192}
   m_Layer: 0
   m_Name: pizza-mozzarella
   m_TagString: Untagged
@@ -97,21 +97,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39999998, y: 0.022451822, z: 0.38042265}
   m_Center: {x: -0.00020015985, y: 0.011225911, z: 0.00018344074}
---- !u!114 &7242801076639459192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510355701358956836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccb8845f8e8b046faa432ca05e712482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: 1
-  speed: 50
-  direction: {x: 0, y: 0, z: 1}
 --- !u!54 &-1154467339389483055
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,3 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7242801076639459192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2510355701358956836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb8845f8e8b046faa432ca05e712482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: 1
+  speed: 50
+  direction: {x: 0, y: 0, z: 1}

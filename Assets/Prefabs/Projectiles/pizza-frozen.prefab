@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4117955032064235249}
   - component: {fileID: 4108197108618569553}
   - component: {fileID: 4159057319159766729}
-  - component: {fileID: -1141648260073846688}
   - component: {fileID: -5277777472418283637}
+  - component: {fileID: -1141648260073846688}
   m_Layer: 0
   m_Name: pizza-frozen
   m_TagString: Untagged
@@ -97,21 +97,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39991832, y: 0.08000002, z: 0.39991832}
   m_Center: {x: 0, y: 0.04000001, z: 0}
---- !u!114 &-1141648260073846688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4131320162684630079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccb8845f8e8b046faa432ca05e712482, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: 1
-  speed: 50
-  direction: {x: 0, y: 0, z: 1}
 --- !u!54 &-5277777472418283637
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,3 +113,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-1141648260073846688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4131320162684630079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb8845f8e8b046faa432ca05e712482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move: 1
+  speed: 50
+  direction: {x: 0, y: 0, z: 1}
