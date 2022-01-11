@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5131554245326548020}
   - component: {fileID: 5131554245326548023}
   - component: {fileID: 5131554245326548022}
+  - component: {fileID: 872134267}
   m_Layer: 5
   m_Name: XP Score
   m_TagString: Untagged
@@ -149,3 +150,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: {fileID: 11400000, guid: 9ed7edf781c820e038cf5913320c20b0, type: 2}
   scoreTextMeshText: {fileID: 5131554245326548023}
+--- !u!114 &872134267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5131554245326548168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 179bba3bd810a5c6ebf7f4bec16892fa, type: 2}
+  _event: {fileID: 11400000, guid: 179bba3bd810a5c6ebf7f4bec16892fa, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5131554245326548022}
+        m_TargetAssemblyTypeName: ScoreDisplay, Assembly-CSharp
+        m_MethodName: updateScore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

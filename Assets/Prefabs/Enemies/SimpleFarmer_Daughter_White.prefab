@@ -935,9 +935,10 @@ GameObject:
   - component: {fileID: 4438114438834788760}
   - component: {fileID: -8134653508457725793}
   - component: {fileID: 1532601840024996714}
-  - component: {fileID: 8614941610340507049}
   - component: {fileID: -5438594019052894873}
   - component: {fileID: -641007611378605757}
+  - component: {fileID: 2647237050578333184}
+  - component: {fileID: 8614941610340507049}
   m_Layer: 0
   m_Name: SimpleFarmer_Daughter_White
   m_TagString: Untagged
@@ -1027,18 +1028,6 @@ MonoBehaviour:
   move: 1
   speed: 14
   direction: {x: 0, y: 0, z: 1}
---- !u!114 &8614941610340507049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5719656403141327177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7151912408b565c2593c8f8369a21902, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-5438594019052894873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,6 +1056,35 @@ MonoBehaviour:
   OnTriggerEnterObjectTag: {fileID: 11400000, guid: 4e774ee6b23be99409c67e041536cf9a, type: 2}
   score: {fileID: 11400000, guid: 9ed7edf781c820e038cf5913320c20b0, type: 2}
   scoreChanged: {fileID: 11400000, guid: 179bba3bd810a5c6ebf7f4bec16892fa, type: 2}
+  scoreIncrement: 20
+--- !u!114 &2647237050578333184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719656403141327177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c2127b6d706887c813c385301b656b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToApply: 1
+  damageDealtEvent: {fileID: 11400000, guid: f1e1fb79d9fa390dab5b218fbd90e4c8, type: 2}
+  health: {fileID: 11400000, guid: 8732848bb1ad76d12ba85a03cc61f29a, type: 2}
+  triggerTag: {fileID: 11400000, guid: 873ab1356ec63df5ca2fefd46ff2762a, type: 2}
+--- !u!114 &8614941610340507049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719656403141327177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7151912408b565c2593c8f8369a21902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5719656403141327181
 GameObject:
   m_ObjectHideFlags: 0

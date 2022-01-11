@@ -224,54 +224,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &872134266 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5131554245326548168, guid: f2469e168de4cb44cabe7938cf68f2d9, type: 3}
-  m_PrefabInstance: {fileID: 5131554244717279414}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &872134267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872134266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showDebugFields: 0
-  _enableGizmoDebugging: 1
-  _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 11400000, guid: 179bba3bd810a5c6ebf7f4bec16892fa, type: 2}
-  _event: {fileID: 11400000, guid: 179bba3bd810a5c6ebf7f4bec16892fa, type: 2}
-  _response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 872134268}
-        m_TargetAssemblyTypeName: ScoreDisplay, Assembly-CSharp
-        m_MethodName: updateScore
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &872134268 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5131554245326548022, guid: f2469e168de4cb44cabe7938cf68f2d9, type: 3}
-  m_PrefabInstance: {fileID: 5131554244717279414}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872134266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3587eaeae635c9ef183d026b7f953517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1548964991 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5131554245326548169, guid: f2469e168de4cb44cabe7938cf68f2d9, type: 3}

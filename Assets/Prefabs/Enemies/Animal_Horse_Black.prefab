@@ -1929,8 +1929,9 @@ GameObject:
   - component: {fileID: 3224980365011711638}
   - component: {fileID: -731220609027232084}
   - component: {fileID: 8248153244086814429}
-  - component: {fileID: -9070914357421724247}
   - component: {fileID: 1329521569655067700}
+  - component: {fileID: -2674090050491341168}
+  - component: {fileID: -9070914357421724247}
   m_Layer: 0
   m_Name: Animal_Horse_Black
   m_TagString: Untagged
@@ -2021,18 +2022,6 @@ MonoBehaviour:
   move: 1
   speed: 20
   direction: {x: 0, y: 0, z: 1}
---- !u!114 &-9070914357421724247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8680809666455002390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7151912408b565c2593c8f8369a21902, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1329521569655067700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,6 +2037,35 @@ MonoBehaviour:
   OnTriggerEnterObjectTag: {fileID: 11400000, guid: 4e774ee6b23be99409c67e041536cf9a, type: 2}
   score: {fileID: 11400000, guid: 9ed7edf781c820e038cf5913320c20b0, type: 2}
   scoreChanged: {fileID: 11400000, guid: 179bba3bd810a5c6ebf7f4bec16892fa, type: 2}
+  scoreIncrement: 50
+--- !u!114 &-2674090050491341168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8680809666455002390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c2127b6d706887c813c385301b656b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageToApply: 1
+  damageDealtEvent: {fileID: 11400000, guid: f1e1fb79d9fa390dab5b218fbd90e4c8, type: 2}
+  health: {fileID: 11400000, guid: 8732848bb1ad76d12ba85a03cc61f29a, type: 2}
+  triggerTag: {fileID: 11400000, guid: 873ab1356ec63df5ca2fefd46ff2762a, type: 2}
+--- !u!114 &-9070914357421724247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8680809666455002390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7151912408b565c2593c8f8369a21902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8680809666455008920
 GameObject:
   m_ObjectHideFlags: 0

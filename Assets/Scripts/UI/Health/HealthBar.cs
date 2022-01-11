@@ -9,22 +9,21 @@ public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public Image fill;
-    public IntVariable playerHealth; // Setup ScriptableObject events for on change update UI.
-    public int maxValue = 100;
+    public IntVariable playerHealth, playerMaxHealth;
 
     private void Start()
     {
-        setMaxHealth(maxValue);
+        setMaxHealth(playerMaxHealth);
     }
 
-    public void setMaxHealth(int health)
+    public void setMaxHealth(IntVariable health)
     {
-        slider.maxValue = health;
-        slider.value = health;
+        slider.maxValue = health.Value;
+        slider.value = health.Value;
     }
 
-    public void setHealth(int health)
+    public void updateHealth()
     {
-        slider.value = health;
+        slider.value = playerHealth.Value;
     }
 }
