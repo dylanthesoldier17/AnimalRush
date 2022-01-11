@@ -12,7 +12,7 @@
 <br>
 
 ### Unity Packages Used/Planned
-> - TextMeshPro
+> - [TextMeshPro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html)
 > - [SO Architecture](https://assetstore.unity.com/packages/tools/utilities/scriptableobject-architecture-131520)
 > - [Low Poly Ultimate Pack](https://assetstore.unity.com/packages/3d/props/low-poly-ultimate-pack-54733)
 >
@@ -20,8 +20,8 @@
  
 ### Software Used:
 > - [Linux Mint 20.3](https://www.linuxmint.com)
-> - Visual Studio Code
-> - Unity Editor 2020.3
+> - [Visual Studio Code](https://code.visualstudio.com/)
+> - [Unity Editor 2020.3](https://unity.com/download)
 > - [Online Markdown Previewer](markdownlivepreview.com)
 > - [GitAhead](https://gitahead.github.io/gitahead.com/)
 > - [Taiga.io](https://taiga.io/) | Agile Project Management
