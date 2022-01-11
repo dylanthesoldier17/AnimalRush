@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PowerPlant.unity
     guid: ffdb72165f563453cb7cd68a02d9f7fa
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FightHUD.unity
     guid: 3084267181506e9fea7d838e7e695985
   - enabled: 1
