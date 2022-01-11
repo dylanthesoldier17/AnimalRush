@@ -24,7 +24,7 @@
 > - Unity Editor 2020.3
 > - [Online Markdown Previewer](markdownlivepreview.com)
 > - [GitAhead](https://gitahead.github.io/gitahead.com/)
-> - [Taiga.io | Agile Project Management(https://taiga.io/)
+> - [Taiga.io](https://taiga.io/) | Agile Project Management
 
 ### Tutorials Used:
 > - [Smoke](https://www.youtube.com/watch?v=jQivfs34Wb0)
