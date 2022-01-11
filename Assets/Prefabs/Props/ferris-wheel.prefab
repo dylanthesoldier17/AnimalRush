@@ -154,7 +154,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300108, guid: 259c90d442d45ec45b5dafe44a9bd2a4, type: 3}
 --- !u!54 &7956293555534104274
@@ -306,7 +306,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300106, guid: 259c90d442d45ec45b5dafe44a9bd2a4, type: 3}
 --- !u!54 &7956293555249447331
@@ -458,7 +458,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300112, guid: 259c90d442d45ec45b5dafe44a9bd2a4, type: 3}
 --- !u!54 &7956293554972439187
@@ -610,7 +610,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300118, guid: 259c90d442d45ec45b5dafe44a9bd2a4, type: 3}
 --- !u!54 &7956293555278583563
@@ -762,7 +762,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300114, guid: 259c90d442d45ec45b5dafe44a9bd2a4, type: 3}
 --- !u!54 &7956293556484306381
@@ -914,7 +914,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300116, guid: 259c90d442d45ec45b5dafe44a9bd2a4, type: 3}
 --- !u!54 &7956293555466481810
@@ -1066,7 +1066,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300110, guid: 259c90d442d45ec45b5dafe44a9bd2a4, type: 3}
 --- !u!54 &7956293556122054518
@@ -1218,7 +1218,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300120, guid: 259c90d442d45ec45b5dafe44a9bd2a4, type: 3}
 --- !u!54 &7956293556336794757
