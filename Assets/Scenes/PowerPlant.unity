@@ -1933,6 +1933,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370318499}
+  - component: {fileID: 1370318498}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1940,6 +1941,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1370318498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370318497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97cf970b5f3ed6fc2be4feb44292d66f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameStartEvent: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
 --- !u!4 &1370318499
 Transform:
   m_ObjectHideFlags: 0
@@ -2256,20 +2270,36 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
       propertyPath: lengthInSec
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
       propertyPath: ShapeModule.angle
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
+      propertyPath: startDelay.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
       propertyPath: InitialModule.size3D
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
+      propertyPath: startDelay.minScalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
+      propertyPath: startDelay.minMaxState
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -2621,48 +2651,6 @@ Transform:
   m_Father: {fileID: 1473107276}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1998245976 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1840302005, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
-  m_PrefabInstance: {fileID: 1717652830}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1998245979 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
-  m_PrefabInstance: {fileID: 1717652830}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1998245980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1998245976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _showDebugFields: 0
-  _enableGizmoDebugging: 1
-  _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
-  _event: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
-  _response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1998245979}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2136361502 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1056980352076610, guid: 18f35b3597c644928bc6e3f3d9458d86, type: 3}
