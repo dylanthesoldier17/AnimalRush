@@ -18453,6 +18453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 620767730}
   - component: {fileID: 620767729}
+  - component: {fileID: 620767731}
   m_Layer: 0
   m_Name: InputManager
   m_TagString: Untagged
@@ -18467,7 +18468,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620767728}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d81a3570fe80986328ab09e4bfd06204, type: 3}
   m_Name: 
@@ -18488,6 +18489,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &620767731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620767728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0736a575b0719d227925d3426e15d17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableEvents: 1
+  selectKeyAction: 2
+  selectKeyCode: 13
+  gameEvent: {fileID: 11400000, guid: 6ca74d7a96d0eba0f99fd19da6ba5c69, type: 2}
 --- !u!1001 &621690656
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,12 +1,14 @@
 using UnityEngine;
 using ScriptableObjectArchitecture;
+using UnityEditor;
 
+[ExecuteInEditMode]
 public class ResetPlayerHealth : MonoBehaviour
 {
     public IntVariable playerHealth, playerMaxHealth;
     public GameEvent healthChangeEvent;
 
-    void Start()
+    void Awake()
     {
         setHealthToMax();
     }
@@ -15,5 +17,10 @@ public class ResetPlayerHealth : MonoBehaviour
     {
         playerHealth.Value = playerMaxHealth.Value;
         healthChangeEvent.Raise(); 
+    }
+
+    private void OnDestroy() 
+    {
+        setHealthToMax(); 
     }
 }

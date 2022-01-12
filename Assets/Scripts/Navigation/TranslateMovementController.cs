@@ -11,13 +11,16 @@ public class TranslateMovementController : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.LeftArrow) && blockLeft != true)
+        if(enableMovementOnPlayer)
         {
-            transform.Translate(-1 * speed * Time.deltaTime, 0, 0);
-        }
-        else if(Input.GetKey(KeyCode.RightArrow) && blockRight != true)
-        {
-            transform.Translate(1 * speed * Time.deltaTime, 0, 0);
+            if(Input.GetKey(KeyCode.LeftArrow) && blockLeft != true)
+            {
+                transform.Translate(-1 * speed * Time.deltaTime, 0, 0);
+            }
+            else if(Input.GetKey(KeyCode.RightArrow) && blockRight != true)
+            {
+                transform.Translate(1 * speed * Time.deltaTime, 0, 0);
+            }
         }
     }
 

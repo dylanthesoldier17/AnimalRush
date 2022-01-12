@@ -6,16 +6,16 @@ using ScriptableObjectArchitecture;
 public class RaiseGameEventOnLifecycle : MonoBehaviour
 {
     public bool enableEvents = true;
-    public enum lifecycleMethod {NONE, START, AWAKE, ON_DESTROY, ON_ENABLE, ON_DISABLE}
+    public enum lifecycleMethod { NONE, START, AWAKE, ON_DESTROY, ON_ENABLE, ON_DISABLE, ON_TRIGGER_ENTER }
     public lifecycleMethod selectLiftcycleMethod = lifecycleMethod.NONE;
-    public GameEvent gameEvent;
+    public GameEvent[] gameEvents;
 
     // Start is called before the first frame update
     private void Start()
     {
         if(selectLiftcycleMethod == lifecycleMethod.START && enableEvents == true)
         {
-            gameEvent.Raise();
+            raiseEvent();
         }
     }
 
@@ -23,7 +23,7 @@ public class RaiseGameEventOnLifecycle : MonoBehaviour
     {
         if(selectLiftcycleMethod == lifecycleMethod.AWAKE && enableEvents == true)
         {
-            gameEvent.Raise();
+            raiseEvent();
         }
     }
 
@@ -31,7 +31,7 @@ public class RaiseGameEventOnLifecycle : MonoBehaviour
     {
         if(selectLiftcycleMethod == lifecycleMethod.ON_DESTROY && enableEvents == true)
         {
-            gameEvent.Raise();
+            raiseEvent();
         }
     }
 
@@ -39,13 +39,29 @@ public class RaiseGameEventOnLifecycle : MonoBehaviour
     {
         if(selectLiftcycleMethod == lifecycleMethod.ON_DISABLE && enableEvents == true)
         {
-            gameEvent.Raise();
+            raiseEvent();
         }
     }
 
     private void OnEnable() 
     {
         if(selectLiftcycleMethod == lifecycleMethod.ON_ENABLE && enableEvents == true)
+        {
+            raiseEvent();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(selectLiftcycleMethod == lifecycleMethod.ON_TRIGGER_ENTER && enableEvents == true)
+        {
+            raiseEvent();
+        }
+    }
+
+    public void raiseEvent()
+    {
+        foreach(GameEvent gameEvent in gameEvents)
         {
             gameEvent.Raise();
         }

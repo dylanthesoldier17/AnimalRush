@@ -9,7 +9,8 @@ public class UILoader : MonoBehaviour
     public StringVariable sceneName;
     public LoadSceneMode sceneLoadMode = LoadSceneMode.Additive;
     public LoadOnState loadOnState = LoadOnState.NONE;
-
+    public enum LoadOnState { NONE, AWAKE, ENABLE }
+    
     private void Awake()
     {
         if(loadOnState == LoadOnState.AWAKE)
@@ -28,13 +29,13 @@ public class UILoader : MonoBehaviour
 
     public void loadScene()
     {
-        SceneManager.LoadScene(sceneName, sceneLoadMode);
+        SceneManager.LoadSceneAsync(sceneName, sceneLoadMode);
     }
 
     public void unloadScene()
     {
-        SceneManager.UnloadScene(sceneName);
+        SceneManager.UnloadSceneAsync(sceneName);
     }
 
-    public enum LoadOnState { NONE, AWAKE, ENABLE }
+    
 }
