@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3315417108244787932}
   - component: {fileID: -4130324922311139980}
   m_Layer: 0
-  m_Name: pizza-cheese
+  m_Name: _pizza-cheese
   m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

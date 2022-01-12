@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NavMesh
   - Projectile
+  - Done
   layers:
   - Default
   - TransparentFX

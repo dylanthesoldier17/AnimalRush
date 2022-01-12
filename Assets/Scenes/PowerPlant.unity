@@ -747,6 +747,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 6f52b946693e54048af74f5cd6ba49f8, type: 3}
   m_PrefabInstance: {fileID: 567854136}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &567854138 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 6f52b946693e54048af74f5cd6ba49f8, type: 3}
+  m_PrefabInstance: {fileID: 567854136}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &567854139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -759,10 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac3d6a763ceb33d3b03d53a581a9fbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectiles:
-  - {fileID: 1038750581055880563, guid: 6b3b60019282017ffb074fe23d6dd90c, type: 3}
-  - {fileID: 4131320162684630079, guid: a3cf598633d38881a97c83a4ba8536c7, type: 3}
-  - {fileID: 2510355701358956836, guid: 422a3ee67459bad018b8975b59739187, type: 3}
+  projectiles: {fileID: 11400000, guid: 6ca32ff3c5320b309a9319b617b9bbc1, type: 2}
   offset: {x: 0, y: 0, z: 2}
   reloadDelayinSeconds: 0.3
 --- !u!114 &567854140
@@ -777,6 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e3f0a150f3af2349262b91bf106ae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableMovementOnPlayer: 1
   speed: 20
 --- !u!65 &567854141
 BoxCollider:
@@ -822,6 +825,53 @@ MonoBehaviour:
   playerHealth: {fileID: 11400000, guid: 8732848bb1ad76d12ba85a03cc61f29a, type: 2}
   onDeathEvent: {fileID: 11400000, guid: d43ca6ba6f80e7155ab55cc4c25a6647, type: 2}
   deathOnHealthLessThanEqualTo: 1
+  playerAnimator: {fileID: 567854138}
+  enableOnDeathAnimation: 1
+  onDeathAnimationString: {fileID: 11400000, guid: c21d0f8733ee2294e86ae182d0965b85, type: 2}
+--- !u!114 &567854145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567854137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: d43ca6ba6f80e7155ab55cc4c25a6647, type: 2}
+  _event: {fileID: 11400000, guid: d43ca6ba6f80e7155ab55cc4c25a6647, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 567854140}
+        m_TargetAssemblyTypeName: TranslateMovementController, Assembly-CSharp
+        m_MethodName: disableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 567854138}
+        m_TargetAssemblyTypeName: TranslateMovementController, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &603070035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1115,7 +1165,7 @@ GameObject:
   - component: {fileID: 895755304}
   m_Layer: 0
   m_Name: UILoader
-  m_TagString: Untagged
+  m_TagString: Done
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1274,7 +1324,7 @@ GameObject:
   - component: {fileID: 907529236}
   m_Layer: 0
   m_Name: EnemySpawner
-  m_TagString: Untagged
+  m_TagString: Done
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1671,6 +1721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263494403}
   - component: {fileID: 1263494404}
+  - component: {fileID: 1263494405}
   m_Layer: 0
   m_Name: PlayerHealthResetOnStartUp
   m_TagString: Untagged
@@ -1707,6 +1758,38 @@ MonoBehaviour:
   playerHealth: {fileID: 11400000, guid: 8732848bb1ad76d12ba85a03cc61f29a, type: 2}
   playerMaxHealth: {fileID: 11400000, guid: aaf394f68a45a8591b50979da84418cf, type: 2}
   healthChangeEvent: {fileID: 11400000, guid: f1e1fb79d9fa390dab5b218fbd90e4c8, type: 2}
+--- !u!114 &1263494405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263494402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: ba7c68a33cd00145e9024187ff98e99c, type: 2}
+  _event: {fileID: 11400000, guid: ba7c68a33cd00145e9024187ff98e99c, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1263494404}
+        m_TargetAssemblyTypeName: ResetPlayerHealth, Assembly-CSharp
+        m_MethodName: setHealthToMax
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1309035063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1933,6 +2016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1370318499}
+  - component: {fileID: 1370318500}
   - component: {fileID: 1370318498}
   m_Layer: 0
   m_Name: GameManager
@@ -1950,10 +2034,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1370318497}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97cf970b5f3ed6fc2be4feb44292d66f, type: 3}
+  m_Script: {fileID: 11500000, guid: 36a63f92cba20ad8498ed6b884b1a2c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStartEvent: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
+  enableEvents: 1
+  selectLiftcycleMethod: 1
+  gameEvent: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
 --- !u!4 &1370318499
 Transform:
   m_ObjectHideFlags: 0
@@ -1972,6 +2058,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1370318500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370318497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: d43ca6ba6f80e7155ab55cc4c25a6647, type: 2}
+  _event: {fileID: 11400000, guid: d43ca6ba6f80e7155ab55cc4c25a6647, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: ba7c68a33cd00145e9024187ff98e99c, type: 2}
+        m_TargetAssemblyTypeName: ScriptableObjectArchitecture.GameEventBase, ScriptableObject-Architecture
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1391658815
 GameObject:
   m_ObjectHideFlags: 0

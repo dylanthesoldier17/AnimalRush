@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TranslateMovementController : MonoBehaviour
 {
+    public bool enableMovementOnPlayer = true;
     public float speed;
     private bool blockLeft = false;
     private bool blockRight = false;
@@ -42,5 +43,15 @@ public class TranslateMovementController : MonoBehaviour
         {
             blockRight = false;
         }
+    }
+
+    public void enableMovement()
+    {
+        enableMovementOnPlayer = true;
+    }
+
+    public void disableMovement()
+    {
+        enableMovementOnPlayer = false;
     }
 }

@@ -8,6 +8,11 @@ public class ResetPlayerHealth : MonoBehaviour
 
     void Start()
     {
+        setHealthToMax();
+    }
+
+    public void setHealthToMax()
+    {
         playerHealth.Value = playerMaxHealth.Value;
         healthChangeEvent.Raise(); 
     }
