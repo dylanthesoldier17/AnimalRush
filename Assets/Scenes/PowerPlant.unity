@@ -1111,6 +1111,8 @@ GameObject:
   m_Component:
   - component: {fileID: 895755302}
   - component: {fileID: 895755303}
+  - component: {fileID: 895755305}
+  - component: {fileID: 895755304}
   m_Layer: 0
   m_Name: UILoader
   m_TagString: Untagged
@@ -1145,6 +1147,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: {fileID: 11400000, guid: 376d6d2983bdad6169e0bd5bb8a41a8f, type: 2}
+  sceneLoadMode: 1
+  loadOnState: 2
+--- !u!114 &895755304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895755301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: ba7c68a33cd00145e9024187ff98e99c, type: 2}
+  _event: {fileID: 11400000, guid: ba7c68a33cd00145e9024187ff98e99c, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 895755303}
+        m_TargetAssemblyTypeName: UILoader, Assembly-CSharp
+        m_MethodName: unloadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &895755305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895755301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
+  _event: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 895755303}
+        m_TargetAssemblyTypeName: UILoader, Assembly-CSharp
+        m_MethodName: loadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &898093041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1312,7 @@ MonoBehaviour:
   enemiesCollection: {fileID: 11400000, guid: b59c3724701bbe281aba98aab2a58d99, type: 2}
   initialSpawnDelayInSeconds: 3
   spawnRateInSeconds: 5
-  enableSpawner: 0
+  enableSpawner: 1
   startingRotation: {x: 0, y: 180, z: 0, w: 0}
 --- !u!114 &907529236
 MonoBehaviour:
@@ -2184,8 +2252,16 @@ PrefabInstance:
       value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
       propertyPath: lengthInSec
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
       propertyPath: ShapeModule.angle
@@ -2545,6 +2621,48 @@ Transform:
   m_Father: {fileID: 1473107276}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1998245976 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1840302005, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
+  m_PrefabInstance: {fileID: 1717652830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1998245979 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1840302008, guid: af6ae156b83eb2c2aabd11e835795974, type: 3}
+  m_PrefabInstance: {fileID: 1717652830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1998245980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998245976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
+  _event: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1998245979}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2136361502 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1056980352076610, guid: 18f35b3597c644928bc6e3f3d9458d86, type: 3}
