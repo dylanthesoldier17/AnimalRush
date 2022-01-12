@@ -1933,7 +1933,7 @@ GameObject:
   - component: {fileID: -2674090050491341168}
   - component: {fileID: -9070914357421724247}
   m_Layer: 0
-  m_Name: Animal_Horse_Black
+  m_Name: _Animal_Horse_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 2647237050578333184}
   - component: {fileID: 8614941610340507049}
   m_Layer: 0
-  m_Name: SimpleFarmer_Daughter_White
+  m_Name: _SimpleFarmer_Daughter_White
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

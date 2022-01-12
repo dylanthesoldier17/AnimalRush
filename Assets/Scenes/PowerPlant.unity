@@ -1202,6 +1202,8 @@ GameObject:
   m_Component:
   - component: {fileID: 907529234}
   - component: {fileID: 907529235}
+  - component: {fileID: 907529237}
+  - component: {fileID: 907529236}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -1239,14 +1241,75 @@ MonoBehaviour:
   xRightBounds: 15.4869
   yPosition: 0
   zPosition: 23
-  enemies:
-  - {fileID: 5719656403141327177, guid: 16a70a0f4cd26b917a0bc212244651e6, type: 3}
-  - {fileID: 8680809666455002390, guid: 949cb831c80fa2028bb5e051d38b36a8, type: 3}
-  - {fileID: 4299086018046726122, guid: b90c78fe834cf67de97ca56558086e32, type: 3}
+  enemiesCollection: {fileID: 11400000, guid: b59c3724701bbe281aba98aab2a58d99, type: 2}
   initialSpawnDelayInSeconds: 3
   spawnRateInSeconds: 5
-  enableSpawner: 1
+  enableSpawner: 0
   startingRotation: {x: 0, y: 180, z: 0, w: 0}
+--- !u!114 &907529236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907529233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: ba7c68a33cd00145e9024187ff98e99c, type: 2}
+  _event: {fileID: 11400000, guid: ba7c68a33cd00145e9024187ff98e99c, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 907529235}
+        m_TargetAssemblyTypeName: EnemySpawner, Assembly-CSharp
+        m_MethodName: stopSpawner
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &907529237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907529233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
+  _event: {fileID: 11400000, guid: 756076a029e349bc288d00a1109138dc, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 907529235}
+        m_TargetAssemblyTypeName: EnemySpawner, Assembly-CSharp
+        m_MethodName: startSpawner
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1092297256
 PrefabInstance:
   m_ObjectHideFlags: 0
