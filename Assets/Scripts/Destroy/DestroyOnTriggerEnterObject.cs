@@ -6,7 +6,9 @@ public class DestroyOnTriggerEnterObject : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other) 
     {
-        Debug.Log($"{other.name} hit {gameObject.name}, Destroyed {other.gameObject.name}");
+        #if UNITY_EDITOR
+            Debug.Log($"{other.name} hit {gameObject.name}, Destroyed {other.gameObject.name}");
+        #endif
         Destroy(other.gameObject);
     }
 }
