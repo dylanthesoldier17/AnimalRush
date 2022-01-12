@@ -9,7 +9,7 @@ public class RaiseGameEventOnInputKeys : MonoBehaviour
     public enum keyAction { NONE, ON_KEY, ON_KEY_PRESSED, ON_KEY_UP }
     public keyAction selectKeyAction = keyAction.NONE;
     public KeyCode selectKeyCode;
-    public IntGameEvent gameEvent;
+    public GameEvent raiseGameEvent;
 
     private void Update()
     {
@@ -29,14 +29,14 @@ public class RaiseGameEventOnInputKeys : MonoBehaviour
         {
             if (Input.GetKeyUp(selectKeyCode))
             {
-                raiseEvent(ref selectKeyCode);
+                raiseEvent();
             }
         }
     }
 
-    private void raiseEvent(ref KeyCode keyCode)
+    private void raiseEvent()
     {
-        gameEvent?.Raise(((int)keyCode));
+        raiseGameEvent?.Raise();
 
         /**/
         #if UNITY_EDITOR
@@ -49,7 +49,7 @@ public class RaiseGameEventOnInputKeys : MonoBehaviour
     {
         if (Input.GetKey(keyCode))
         {
-            raiseEvent(ref keyCode);
+            raiseEvent();
         }
     }
 
@@ -57,7 +57,7 @@ public class RaiseGameEventOnInputKeys : MonoBehaviour
     {
         if (Input.GetKeyDown(keyCode))
         {
-            raiseEvent(ref keyCode);
+            raiseEvent();
         }
     }
 
@@ -65,7 +65,7 @@ public class RaiseGameEventOnInputKeys : MonoBehaviour
     {
         if (Input.GetKeyUp(keyCode))
         {
-            raiseEvent(ref keyCode);
+            raiseEvent();
         }
     }
 }

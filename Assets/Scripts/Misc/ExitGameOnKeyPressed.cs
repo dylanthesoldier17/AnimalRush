@@ -32,6 +32,10 @@ public class ExitGameOnKeyPressed : MonoBehaviour
         if (keyPressedCount >= keyPressCountToActivate)
         {
             Application.Quit();
+
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.ExitPlaymode();
+            #endif
         }
     }
 

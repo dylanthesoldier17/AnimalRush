@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &690736324767428276
+--- !u!1 &3298793291186781998
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,24 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 690736324767428279}
-  - component: {fileID: 690736324767428278}
-  - component: {fileID: 690736324767428280}
-  - component: {fileID: 690736324767428281}
+  - component: {fileID: 3298793291186781997}
+  - component: {fileID: 3298793291186781996}
+  - component: {fileID: 3298793291186781986}
+  - component: {fileID: 3298793291186781987}
   m_Layer: 0
-  m_Name: UILoader
+  m_Name: HUD_UILoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &690736324767428279
+--- !u!4 &3298793291186781997
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690736324767428276}
+  m_GameObject: {fileID: 3298793291186781998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &690736324767428278
+--- !u!114 &3298793291186781996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690736324767428276}
+  m_GameObject: {fileID: 3298793291186781998}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d07674c9715d9ba2a960b6e0d1ebba7f, type: 3}
@@ -48,13 +48,13 @@ MonoBehaviour:
   sceneName: {fileID: 11400000, guid: 376d6d2983bdad6169e0bd5bb8a41a8f, type: 2}
   sceneLoadMode: 1
   loadOnState: 0
---- !u!114 &690736324767428280
+--- !u!114 &3298793291186781986
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690736324767428276}
+  m_GameObject: {fileID: 3298793291186781998}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
@@ -68,7 +68,7 @@ MonoBehaviour:
   _response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 690736324767428278}
+      - m_Target: {fileID: 3298793291186781996}
         m_TargetAssemblyTypeName: UILoader, Assembly-CSharp
         m_MethodName: loadScene
         m_Mode: 1
@@ -80,13 +80,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &690736324767428281
+--- !u!114 &3298793291186781987
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690736324767428276}
+  m_GameObject: {fileID: 3298793291186781998}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
@@ -100,7 +100,7 @@ MonoBehaviour:
   _response:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 690736324767428278}
+      - m_Target: {fileID: 3298793291186781996}
         m_TargetAssemblyTypeName: UILoader, Assembly-CSharp
         m_MethodName: unloadScene
         m_Mode: 1
