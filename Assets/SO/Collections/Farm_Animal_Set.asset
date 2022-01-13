@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 156f4052644faf645bba864aa1fd4e16, type: 3}
-  m_Name: FarmAnimals
+  m_Name: Farm_Animal_Set
   m_EditorClassIdentifier: 
   _list:
   - {fileID: 4299086018046726122, guid: b90c78fe834cf67de97ca56558086e32, type: 3}

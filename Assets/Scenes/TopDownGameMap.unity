@@ -18477,8 +18477,8 @@ MonoBehaviour:
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 11400000, guid: 5b76990e84deb82fda511491b22df822, type: 2}
-  _event: {fileID: 11400000, guid: 5b76990e84deb82fda511491b22df822, type: 2}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 3cca04e9d2b8b6449b79b58e23e82d85, type: 2}
+  _event: {fileID: 11400000, guid: 3cca04e9d2b8b6449b79b58e23e82d85, type: 2}
   _response:
     m_PersistentCalls:
       m_Calls:
@@ -21115,6 +21115,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 699508439}
+  - component: {fileID: 699508441}
   - component: {fileID: 699508440}
   m_Layer: 0
   m_Name: InputManager
@@ -21146,11 +21147,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 699508438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b55c9415ae3e092ea8cf367e47817a2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0736a575b0719d227925d3426e15d17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theKey: 13
-  theEvent: {fileID: 11400000, guid: 5b76990e84deb82fda511491b22df822, type: 2}
+  enableEvents: 1
+  selectKeyAction: 2
+  selectKeyCode: 9
+  raiseGameEvent: {fileID: 11400000, guid: 57906787ad387b12fbb5cb121da2cf4d, type: 2}
+--- !u!114 &699508441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699508438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0736a575b0719d227925d3426e15d17c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableEvents: 1
+  selectKeyAction: 2
+  selectKeyCode: 13
+  raiseGameEvent: {fileID: 11400000, guid: 3cca04e9d2b8b6449b79b58e23e82d85, type: 2}
 --- !u!1 &700419745
 GameObject:
   m_ObjectHideFlags: 0
@@ -40643,6 +40662,7 @@ GameObject:
   - component: {fileID: 1448374966}
   - component: {fileID: 1448374965}
   - component: {fileID: 1448374968}
+  - component: {fileID: 1448374969}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -40709,7 +40729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448374964}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4.5, y: 41.7, z: -78.4}
+  m_LocalPosition: {x: 4.5, y: 42, z: -78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40728,7 +40748,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1656894696}
-  offset: {x: 0, y: 41.7, z: 0}
+  cameraPositions:
+  - {fileID: 11400000, guid: 2bfc64362965d3168998d3557d04d77e, type: 2}
+  - {fileID: 11400000, guid: 73ff6d9bab3a093adae129c79000def6, type: 2}
+  positionIndex: 0
+--- !u!114 &1448374969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448374964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: fc1c9725c8ef9a662a559e78d0697bc5, type: 2}
+  _event: {fileID: 11400000, guid: fc1c9725c8ef9a662a559e78d0697bc5, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1448374968}
+        m_TargetAssemblyTypeName: FollowPlayer, Assembly-CSharp
+        m_MethodName: loadNextPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1453124793
 PrefabInstance:
   m_ObjectHideFlags: 0

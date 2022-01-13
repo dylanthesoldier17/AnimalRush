@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/PowerPlant.unity
     guid: ffdb72165f563453cb7cd68a02d9f7fa
   - enabled: 1
-    path: Assets/Scenes/UI Scenes/FightHUD.unity
-    guid: 3084267181506e9fea7d838e7e695985
-  - enabled: 1
     path: Assets/Scenes/TopDownGameMap.unity
     guid: 5c8f803f3ab6ff025b2e88e8bc86666c
+  - enabled: 1
+    path: Assets/Scenes/UI Scenes/FightHUD.unity
+    guid: 3084267181506e9fea7d838e7e695985
   - enabled: 1
     path: Assets/Scenes/UI Scenes/GameOverUI.unity
     guid: c87d28dc4482bc6f3a3ec9e837f6b7dd

@@ -1,13 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ScriptableObjectArchitecture;
 
-public class TranslateMovementController : MonoBehaviour
+public class TranslateMovementController : MonoBehaviour, IGameEventListener
 {
+    public GameEvent changeStateTriggerEvent;
+    public enum OnEventAction { NONE, DISABLE, ENABLE, TOGGLE }
+    public OnEventAction onEventAction = OnEventAction.NONE;
+
     public bool enableMovementOnPlayer = true;
     public float speed;
     private bool blockLeft = false;
     private bool blockRight = false;
+
+    private void Start() 
+    {
+        if(onEventAction != OnEventAction.NONE)
+        {
+            changeStateTriggerEvent.AddListener(this);
+        }
+    }
 
     void Update()
     {
@@ -56,5 +69,21 @@ public class TranslateMovementController : MonoBehaviour
     public void disableMovement()
     {
         enableMovementOnPlayer = false;
+    }
+
+    public void OnEventRaised()
+    {
+        switch(onEventAction)
+        {
+            case OnEventAction.ENABLE: enableMovementOnPlayer = true; break;
+            case OnEventAction.DISABLE: enableMovementOnPlayer = false; break;
+            case OnEventAction.TOGGLE:
+                if(enableMovementOnPlayer){
+                    enableMovementOnPlayer = false;
+                } else {
+                    enableMovementOnPlayer = true;
+                }
+            break;
+        }
     }
 }
