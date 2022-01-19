@@ -31,16 +31,21 @@ public class ExitGameOnKeyPressed : MonoBehaviour
         // if threshold is reached the exit
         if (keyPressedCount >= keyPressCountToActivate)
         {
-            Application.Quit();
-
-            #if UNITY_EDITOR
-                UnityEditor.EditorApplication.ExitPlaymode();
-            #endif
+            exitGame();
         }
     }
 
     private void resetKeyPressedCounter()
     {
         keyPressedCount = 0;
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
+
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.ExitPlaymode();
+            #endif
     }
 }
