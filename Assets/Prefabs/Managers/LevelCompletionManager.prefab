@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5835505080632885608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5835505080632885609}
+  - component: {fileID: 5835505080632885614}
+  - component: {fileID: 5835505080632885615}
+  m_Layer: 0
+  m_Name: LevelCompletionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5835505080632885609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835505080632885608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5835505080632885614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835505080632885608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8be273c0f3a20874dad08b81ba132714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyDestroyed: {fileID: 11400000, guid: 188de8531bf336847b187b993bf4b406, type: 2}
+  levelCompleted: {fileID: 11400000, guid: a6c4f517cd29a8db892f235d45a0b7ad, type: 2}
+  enemiesToDestroy: 15
+--- !u!114 &5835505080632885615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835505080632885608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7cece8e6166b9975ba1838f65b421b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theEvent: {fileID: 11400000, guid: a6c4f517cd29a8db892f235d45a0b7ad, type: 2}
+  onEventTrigger: 1
+  sceneLoadMode: 0
+  theSceneName: {fileID: 11400000, guid: 79e3a638fb6e6334ab00fa44e1a391b1, type: 2}
+  loadOnStart: 0

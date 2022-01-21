@@ -939,6 +939,7 @@ GameObject:
   - component: {fileID: -641007611378605757}
   - component: {fileID: 2647237050578333184}
   - component: {fileID: 8614941610340507049}
+  - component: {fileID: 2879597319256858723}
   m_Layer: 0
   m_Name: _SimpleFarmer_Daughter_White
   m_TagString: Untagged
@@ -1085,6 +1086,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151912408b565c2593c8f8369a21902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2879597319256858723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5719656403141327177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fc49877e56ad54f9f1ccc808b26294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileTag: {fileID: 11400000, guid: 4e774ee6b23be99409c67e041536cf9a, type: 2}
+  enemyDestroy: {fileID: 11400000, guid: 188de8531bf336847b187b993bf4b406, type: 2}
 --- !u!1 &5719656403141327181
 GameObject:
   m_ObjectHideFlags: 0

@@ -1932,6 +1932,7 @@ GameObject:
   - component: {fileID: 1329521569655067700}
   - component: {fileID: -2674090050491341168}
   - component: {fileID: -9070914357421724247}
+  - component: {fileID: -603607649411740355}
   m_Layer: 0
   m_Name: _Animal_Horse_Black
   m_TagString: Untagged
@@ -2066,6 +2067,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151912408b565c2593c8f8369a21902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-603607649411740355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8680809666455002390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35fc49877e56ad54f9f1ccc808b26294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileTag: {fileID: 11400000, guid: 4e774ee6b23be99409c67e041536cf9a, type: 2}
+  enemyDestroy: {fileID: 11400000, guid: 188de8531bf336847b187b993bf4b406, type: 2}
 --- !u!1 &8680809666455008920
 GameObject:
   m_ObjectHideFlags: 0
