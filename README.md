@@ -1,5 +1,7 @@
 # Animal Rush
 
+![game_map.png](https://dylanmoore.info/portfolio/animalrush/game_map.png)
+
 ### Description
 > This is a 3D RPG where the protagonist must save his town from hungry animals and people. This project is a spin off of one of [Unity's Learn platform lessons](https://learn.unity.com/project/unit-2-basic-gameplay?pathwayId=5f7e17e1edbc2a5ec21a20af&missionId=5f71fe63edbc2a00200e9de0). I am working on this to demonstrate my capabilities as a unity developer.
 
