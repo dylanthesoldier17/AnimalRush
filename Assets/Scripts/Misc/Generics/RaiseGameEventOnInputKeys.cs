@@ -34,7 +34,7 @@ public class RaiseGameEventOnInputKeys : MonoBehaviour
         }
     }
 
-    private void raiseEvent()
+    public void raiseEvent()
     {
         raiseGameEvent?.Raise();
 

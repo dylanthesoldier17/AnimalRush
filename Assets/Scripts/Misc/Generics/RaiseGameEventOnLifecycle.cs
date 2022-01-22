@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using ScriptableObjectArchitecture;
 public class RaiseGameEventOnLifecycle : MonoBehaviour
 {
     public bool enableEvents = true;
-    public enum lifecycleMethod { NONE, START, AWAKE, ON_DESTROY, ON_ENABLE, ON_DISABLE, ON_TRIGGER_ENTER }
+    public enum lifecycleMethod { NONE, START, AWAKE, ON_DESTROY, ON_ENABLE, ON_DISABLE, ON_TRIGGER_ENTER, ON_TRIGGER_EXIT }
     public lifecycleMethod selectLiftcycleMethod = lifecycleMethod.NONE;
     public GameEvent[] gameEvents;
 
@@ -54,6 +55,14 @@ public class RaiseGameEventOnLifecycle : MonoBehaviour
     private void OnTriggerEnter(Collider other) 
     {
         if(selectLiftcycleMethod == lifecycleMethod.ON_TRIGGER_ENTER && enableEvents == true)
+        {
+            raiseEvent();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(selectLiftcycleMethod == lifecycleMethod.ON_TRIGGER_EXIT && enableEvents == true)
         {
             raiseEvent();
         }
