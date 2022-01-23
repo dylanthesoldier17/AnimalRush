@@ -1,30 +1,32 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using ScriptableObjectArchitecture;
 
-public class LevelManager : MonoBehaviour, IGameEventListener
+public class LevelManager : MonoBehaviour
 {
-    public GameEvent enemyDestroyed;
+    public StringGameEvent enemyDestroyed;
     public GameEvent levelCompleted;
-    public IntGameEvent enemiesLeft;
+    public IntGameEvent enemiesLeftEvent;
     public int enemiesToDestroy;
-    private int counter = 0;
+    private int _enemiesDestroyedCounter = 0;
+    
     private void Awake()
     {
-        enemyDestroyed.AddListener(this);
-        enemiesLeft?.Raise(enemiesToDestroy);
+        enemyDestroyed.AddListener(HandleEnemyDestroyedEvent);
     }
 
-    public void OnEventRaised()
+    private void HandleEnemyDestroyedEvent()
     {
-        counter++;
-        if (counter >= enemiesToDestroy)
+        _enemiesDestroyedCounter++;
+        if (_enemiesDestroyedCounter >= enemiesToDestroy)
         {
             levelCompleted.Raise();
         }
         
-        enemiesLeft?.Raise(enemiesToDestroy-counter);
+        RaiseEventEnemiesLeft();
+    }
+
+    public void RaiseEventEnemiesLeft()
+    {
+        enemiesLeftEvent.Raise(enemiesToDestroy-_enemiesDestroyedCounter);
     }
 }

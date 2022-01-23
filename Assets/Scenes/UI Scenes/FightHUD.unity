@@ -394,7 +394,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1365355529
@@ -635,6 +635,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 858385859281693124, guid: fef63a03cbcb9cbe3b59a14cfe7eb9db, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.17651367
+      objectReference: {fileID: 0}
     - target: {fileID: 7709690428068483258, guid: fef63a03cbcb9cbe3b59a14cfe7eb9db, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -665,11 +669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7709690428068483258, guid: fef63a03cbcb9cbe3b59a14cfe7eb9db, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 400
+      value: 193.1696
       objectReference: {fileID: 0}
     - target: {fileID: 7709690428068483258, guid: fef63a03cbcb9cbe3b59a14cfe7eb9db, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 18.82
       objectReference: {fileID: 0}
     - target: {fileID: 7709690428068483258, guid: fef63a03cbcb9cbe3b59a14cfe7eb9db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -705,7 +709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7709690428068483258, guid: fef63a03cbcb9cbe3b59a14cfe7eb9db, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 7709690428068483258, guid: fef63a03cbcb9cbe3b59a14cfe7eb9db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -728,6 +732,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479358885}
     m_Modifications:
+    - target: {fileID: 5131554245326548023, guid: f2469e168de4cb44cabe7938cf68f2d9, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131554245326548023, guid: f2469e168de4cb44cabe7938cf68f2d9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5131554245326548168, guid: f2469e168de4cb44cabe7938cf68f2d9, type: 3}
       propertyPath: m_Name
       value: XP Score

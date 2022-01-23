@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using ScriptableObjectArchitecture;
+using UnityEngine.Events;
 
 public class SceneLoader : MonoBehaviour, IGameEventListener
 {
@@ -13,6 +14,8 @@ public class SceneLoader : MonoBehaviour, IGameEventListener
     private string sceneName;
     public bool loadOnStart = false;
 
+    public UnityEvent onLoadCompletion;
+    
     private void Start() 
     {
         sceneName = theSceneName;
@@ -30,7 +33,8 @@ public class SceneLoader : MonoBehaviour, IGameEventListener
 
     public void loadScene()
     {
-        SceneManager.LoadSceneAsync(sceneName, sceneLoadMode);
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(sceneName, sceneLoadMode);
+        loadOperation.completed += notifyAllOnCompletionEvent;
     }
 
     public void unloadScene()
@@ -63,5 +67,10 @@ public class SceneLoader : MonoBehaviour, IGameEventListener
                 }
             break;
         }
+    }
+    
+    private void notifyAllOnCompletionEvent(AsyncOperation asyncOperation)
+    {
+        onLoadCompletion.Invoke();
     }
 }
