@@ -125,7 +125,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8316336659456917407}
         m_TargetAssemblyTypeName: FollowPlayer, Assembly-CSharp
-        m_MethodName: loadNextPosition
+        m_MethodName: LoadNextPosition
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
