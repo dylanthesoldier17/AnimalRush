@@ -12,37 +12,53 @@ public class PlayerAnimationManager : MonoBehaviour
     public NavMeshAgent navMeshAgent;
     public Animator animator;
     public float animationDelayInSeconds = 1;
+    private SpeedCalculator _speedCalculator;
+    private static readonly int SpeedF = Animator.StringToHash("Speed_f");
 
     private void Start()
     {
-        StartCoroutine("handleSpeed");
+        _speedCalculator = new SpeedCalculator(transform);
+        StartCoroutine(AnimationControlCoroutine());
     }
 
-    private IEnumerator handleSpeed()
+    private IEnumerator AnimationControlCoroutine()
     {
-        float lastTimeStamp = Time.time;
-        float deltaTime = 0;
-
-        Vector3 lastPosition = transform.position;
-        float deltaPosition = 0;
-
         while (enabled)
         {
             yield return new WaitForSeconds(animationDelayInSeconds);
             
-            deltaTime = Time.time - lastTimeStamp;
-            deltaPosition = (transform.position - lastPosition).magnitude;
+            float currentSpeed =  _speedCalculator.CalculateCurrentSpeed();
 
-            if(Mathf.Approximately(deltaPosition, 0)){ deltaPosition = 0; }
+            animator.SetFloat(SpeedF, currentSpeed);
+        }
+    }
 
-            lastPosition = transform.position;
-            lastTimeStamp = Time.time;
+    private class SpeedCalculator
+    {
+        private readonly Transform _transform;
 
-            float currentSpeed =  deltaPosition / deltaTime;
+        private float _lastTimeStamp = Time.time;
+        private float _deltaTime = 0;
 
-            animator.SetFloat("Speed_f", currentSpeed);
+        private Vector3 _lastPosition;
+        private float _deltaPosition = 0;
 
-            //Debug.Log(currentSpeed);
+        public SpeedCalculator(Transform transform)
+        {
+            _transform = transform;
+        }
+
+        public float CalculateCurrentSpeed()
+        {
+            _deltaTime = Time.time - _lastTimeStamp;
+            _deltaPosition = (_transform.position - _lastPosition).magnitude;
+
+            if(Mathf.Approximately(_deltaPosition, 0)){ _deltaPosition = 0; }
+
+            _lastPosition = _transform.position;
+            _lastTimeStamp = Time.time;
+
+            return _deltaPosition / _deltaTime;
         }
     }
 }
