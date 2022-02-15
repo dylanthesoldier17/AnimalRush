@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using ScriptableObjectArchitecture;
 
-public class FollowPlayer : MonoBehaviour
+public class CameraFollowPlayer : MonoBehaviour
 {
     public GameObject player;
     public CameraPositions[] cameraPositions;
