@@ -20,13 +20,13 @@ public class MovementController : MonoBehaviour
         if (navMeshAgent.pathStatus != NavMeshPathStatus.PathComplete) { return; }
 
         //Check for user input and move character
-        checkInputAndSetLocation(KeyCode.UpArrow, location.Up);
-        checkInputAndSetLocation(KeyCode.LeftArrow, location.Left);
-        checkInputAndSetLocation(KeyCode.RightArrow, location.Right);
-        checkInputAndSetLocation(KeyCode.DownArrow, location.Down);
+        CheckInputAndSetLocation(KeyCode.UpArrow, location.Up);
+        CheckInputAndSetLocation(KeyCode.LeftArrow, location.Left);
+        CheckInputAndSetLocation(KeyCode.RightArrow, location.Right);
+        CheckInputAndSetLocation(KeyCode.DownArrow, location.Down);
     }
 
-    private void checkInputAndSetLocation(KeyCode keyCode, LinkedPath selectedLocation)
+    private void CheckInputAndSetLocation(KeyCode keyCode, LinkedPath selectedLocation)
     {
         if (Input.GetKeyDown(keyCode) && selectedLocation != null)
         {

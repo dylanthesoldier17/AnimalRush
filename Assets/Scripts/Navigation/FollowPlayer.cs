@@ -8,15 +8,15 @@ public class FollowPlayer : MonoBehaviour
     public GameObject player;
     public CameraPositions[] cameraPositions;
     public int positionIndex = 0;
-
-    // Update is called once per frame
+    
     private void LateUpdate()
     {
-        transform.position = player.transform.position + cameraPositions[positionIndex].position;
-        transform.localEulerAngles = cameraPositions[positionIndex].rotation;
+        var transform1 = transform;
+        transform1.position = player.transform.position + cameraPositions[positionIndex].position;
+        transform1.localEulerAngles = cameraPositions[positionIndex].rotation;
     }
 
-    public void loadNextPosition()
+    public void LoadNextPosition()
     {
         if(positionIndex+1 >= cameraPositions.Length)
         {
@@ -26,7 +26,7 @@ public class FollowPlayer : MonoBehaviour
         }
     }
 
-    public void loadPreviousPosition()
+    public void LoadPreviousPosition()
     {
         if(positionIndex-1 < 0)
         {
@@ -36,7 +36,7 @@ public class FollowPlayer : MonoBehaviour
         }
     }
 
-    public void loadPosition(int i)
+    public void LoadPosition(int i)
     {
         positionIndex = i;
     }
