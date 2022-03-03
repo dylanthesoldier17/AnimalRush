@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: -5277777472418283637}
   - component: {fileID: -1141648260073846688}
   - component: {fileID: 117763844413831681}
-  - component: {fileID: -1930431224414250909}
   - component: {fileID: 23586012383673526}
+  - component: {fileID: -6881759069887144343}
   m_Layer: 0
   m_Name: _pizza-frozen
   m_TagString: Projectile
@@ -227,21 +227,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-1930431224414250909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4131320162684630079}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bacce54029b2a984fbb60d0b0870d2b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theClip: {fileID: 8300000, guid: fe5b97ab25ceb2b46ab6c30f807ae4de, type: 3}
-  theEvent: {fileID: 11400000, guid: 26b5868ae5c5d854ea4664e3bbf15a43, type: 2}
-  matchTag: {fileID: 0}
 --- !u!114 &23586012383673526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,3 +239,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7151912408b565c2593c8f8369a21902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6881759069887144343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4131320162684630079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bc61b5b51884d74598f329a18ae231a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 117763844413831681}
+  audioClip: {fileID: 8300000, guid: 76ec0c6324b4987409fa08abead2d800, type: 3}

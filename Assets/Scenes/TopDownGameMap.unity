@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -34863,9 +34863,9 @@ RectTransform:
   m_Father: {fileID: 2145049809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 307, y: -158}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -70, y: -30}
   m_SizeDelta: {x: 110, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194321697
@@ -53620,7 +53620,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5d21ddcb3ed5bb4489208c3fbfc61569, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -61823,10 +61823,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1953175906, guid: c6d4c281a561ecc99a854d12cb2fc085, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1953175907, guid: c6d4c281a561ecc99a854d12cb2fc085, type: 3}
       propertyPath: location
       value: 
-      objectReference: {fileID: 2086550228}
+      objectReference: {fileID: 2066987530}
+    - target: {fileID: 1953175914, guid: c6d4c281a561ecc99a854d12cb2fc085, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 1227ade79a3fb3f459163c5e27410fd3, type: 3}
+    - target: {fileID: 1953175914, guid: c6d4c281a561ecc99a854d12cb2fc085, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0abb55d4feacf9249b2e445ecaed7c70, type: 2}
     - target: {fileID: 192536486548840155, guid: c6d4c281a561ecc99a854d12cb2fc085, type: 3}
       propertyPath: m_Name
       value: Player
@@ -61874,6 +61886,10 @@ PrefabInstance:
     - target: {fileID: 196976391147682581, guid: c6d4c281a561ecc99a854d12cb2fc085, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 238375862984829109, guid: c6d4c281a561ecc99a854d12cb2fc085, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6d4c281a561ecc99a854d12cb2fc085, type: 3}

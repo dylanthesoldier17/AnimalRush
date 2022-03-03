@@ -7,6 +7,7 @@ TagManager:
   - NavMesh
   - Projectile
   - Done
+  - Border
   layers:
   - Default
   - TransparentFX

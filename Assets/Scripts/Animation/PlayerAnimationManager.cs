@@ -32,7 +32,8 @@ public class PlayerAnimationManager : MonoBehaviour
             animator.SetFloat(SpeedF, currentSpeed);
         }
     }
-
+    
+    //TODO: Add a unit test to test the output of this speed calculator.
     private class SpeedCalculator
     {
         private readonly Transform _transform;
